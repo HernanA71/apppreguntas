@@ -57,7 +57,7 @@ const questions = [
     }
 ];
 
-const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyBBGH1XWdaNa1Nn_KVr0CrbR3zOFF1eeEhVLaJcZqvCigOUJ3EKQEmZdH7RBmFRVjD/exec';
+const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyXGHBrmyAuc7j5Ts1dXsdPna7aaKJufUsMbbkbRF8yqjpx621ufuvE50PHIOpsFv5l/exec';
 
 startButton.addEventListener('click', startGame);
 restartButton.addEventListener('click', () => {
