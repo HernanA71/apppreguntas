@@ -169,12 +169,13 @@ function sendDataToSheet() {
 
     fetch(SCRIPT_URL, {
         method: 'POST',
-        mode: 'cors',
-        cache: 'no-cache',
+        mode: 'cors', // El modo cors es necesario
         headers: {
-            'Content-Type': 'application/json'
+            // Cambiamos el Content-Type para evitar la pre-pregunta (preflight)
+            'Content-Type': 'text/plain;charset=utf-8',
         },
-        body: JSON.stringify(data)
+        // El cuerpo sigue siendo el string JSON
+        body: JSON.stringify(data) 
     })
     .then(res => res.json())
     .then(data => {
