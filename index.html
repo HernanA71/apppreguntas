@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Seguridad Privada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="user-form">
+            <h1>Registro de Jugador</h1>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre completo" required>
+            <input type="text" id="identificacion" placeholder="Escribe tu número de identificación" required>
+            <button id="start-btn">Comenzar Juego</button>
+        </div>
+
+        <div id="quiz-container" class="hide">
+            <div id="question-container">
+                <h2 id="question">Question Text</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-container" class="hide">
+            <h1>Juego Terminado</h1>
+            <p id="score-text">Tu puntaje es: 0 de 5</p>
+            <p id="feedback-text"></p>
+            <button id="restart-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
